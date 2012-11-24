@@ -1,0 +1,16 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<title>{% block title %}StartTheDark{% endblock %}</title>
+		{% block extra_head %}{% endblock %}
+	</head>
+	<body>
+		<ul>
+			<li><a href="{% url ev_tonight %}">Tonight</a></li>
+			<li><a href="{% url ev_archive %}">Archive</a></li>
+		</ul>
+		{% block main_content %}{% endblock %}
+		{% block extra_body %}{% endblock %}
+	</body>
+</html>

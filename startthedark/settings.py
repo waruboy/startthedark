@@ -4,7 +4,7 @@ DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
 import os.path
-PROJECT_DIR = os.path.dirname(__file__)
+PROJECT_DIR = os.path.join(os.path.dirname(__file__), '..')
 
 
 ADMINS = (
@@ -128,6 +128,7 @@ INSTALLED_APPS = (
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
     'events',
+    'socialgraph',
 )
 
 # A sample logging configuration. The only tangible logging
